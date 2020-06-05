@@ -51,6 +51,7 @@ function submitData(name, email) {
     })
     .catch(error => {
       alert('stop stop stop');
+      document.body.innerHTML = error.message;
       console.log(error.message);
     });
 }
