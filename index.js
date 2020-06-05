@@ -23,4 +23,4 @@ function submitData(name, email) {
     });
 }
 
-// submitData('test', 'test.@test.com');
+submitData('test', 'test.@test.com');
