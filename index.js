@@ -46,7 +46,7 @@ function submitData(name, email) {
   })
     .then(response => response.json())
     .then(data => {
-      document.body.insertAdjacentHTML('beforebegin', `<p>${data.id}</p>`);
+      document.body.innerHTML = data.id;
       console.log(data.id);
     })
     .catch(error => {
