@@ -1,4 +1,3 @@
-// Add your code here
 
 function submitData(name, email) {
   const newUser = {
@@ -15,6 +14,7 @@ function submitData(name, email) {
   })
     .then(response => response.json())
     .then(data => {
+      console.log(data);
     })
     .catch(error => {
       alert('stop stop stop');
